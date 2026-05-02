@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tom-Tech Gadget - Buy & Sell iPhones & Laptops</title>
+  <link rel="stylesheet" href="E-commerce.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">Tech 📱💻</div>
+    <div class="nav-menu">
+      <a href="#home" class="nav-link active" onclick="showSection('home')">Home</a>
+      <a href="#products" class="nav-link" onclick="showSection('products')">Shop</a>
+      <a href="#sell" class="nav-link" onclick="showSection('sell')">Sell Device</a>
+      <a href="#contact" class="nav-link" onclick="showSection('contact')">Contact</a>
+      <a href="#cart" class="nav-link" onclick="showSection('cart')">🛒 Cart (<span id="cartCount">0</span>)</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HOME SECTION -->
+<section id="home" class="section active">
+  <div class="hero">
+    <h1>Welcome to Tom-Tech Gadget </h1>
+    <p>Buy and Sell iPhones & Laptops at the Best Prices</p>
+    <button class="cta-button" onclick="showSection('products')">Shop Now</button>
+  </div>
+  <div class="features">
+    <div class="feature-box">
+      <h3>✓ Best Deals</h3>
+      <p>Unbeatable prices on iPhones and Laptops</p>
+    </div>
+    <div class="feature-box">
+      <h3>✓ Easy Selling</h3>
+      <p>List your devices in minutes</p>
+    </div>
+    <div class="feature-box">
+      <h3>✓ Secure Payment</h3>
+      <p>WhatsApp payment verification</p>
+    </div>
+    <div class="feature-box">
+      <h3>✓ Fast Shipping</h3>
+      <p>Quick delivery to your location</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS SECTION -->
+<section id="products" class="section">
+  <div class="section-header">
+    <h2>🎁 Available Products</h2>
+    <div class="filters">
+      <button onclick="filterProducts('all')" class="filter-btn active">All</button>
+      <button onclick="filterProducts('iphone')" class="filter-btn">iPhones</button>
+      <button onclick="filterProducts('laptop')" class="filter-btn">Laptops</button>
+    </div>
+  </div>
+  <div class="products-grid" id="productList">
+    <!-- Products loaded by JavaScript -->
+  </div>
+</section>
+
+<!-- SELL SECTION -->
+<section id="sell" class="section">
+  <div class="sell-container">
+    <h2>📤 Sell Your Device</h2>
+    <form onsubmit="addProduct(event)" class="sell-form">
+      <input type="text" id="sellName" placeholder="Product Name (e.g., iPhone 14 Pro)" required>
+      <input type="text" id="sellCategory" placeholder="Category (iphone/laptop)" required>
+      <input type="number" id="sellPrice" placeholder="Price (₦)" required>
+      <input type="text" id="sellImage" placeholder="Image URL" required>
+      <textarea id="sellDescription" placeholder="Product Description" required></textarea>
+      <button type="submit" class="btn-submit">Post Product for Sale</button>
+    </form>
+  </div>
+</section>
+
+<!-- CART SECTION -->
+<section id="cart" class="section">
+  <div class="cart-container">
+    <h2>🛒 Shopping Cart</h2>
+    <div id="cartItems" class="cart-items">
+      <!-- Cart items loaded by JavaScript -->
+    </div>
+    <div class="cart-summary">
+      <div class="summary-row">
+        <span>Subtotal:</span>
+        <span id="subtotal">₦0</span>
+      </div>
+      <div class="summary-row">
+        <span>Shipping:</span>
+        <span id="shipping">₦0</span>
+      </div>
+      <div class="summary-row total">
+        <span>Total:</span>
+        <span id="totalPrice">₦0</span>
+      </div>
+      <button onclick="checkoutViaWhatsApp()" class="checkout-btn">💬 Pay via WhatsApp</button>
+      <button onclick="clearCart()" class="clear-btn">Clear Cart</button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="section">
+  <div class="contact-container">
+    <h2>📞 Get in Touch</h2>
+    <div class="contact-content">
+      <div class="contact-info">
+        <div class="info-item">
+          <h3>📱 WhatsApp</h3>
+          <p><a href="https://wa.me/2348033263053" target="_blank" class="contact-link">Chat with us on WhatsApp</a></p>
+        </div>
+        <div class="info-item">
+          <h3>📧 Email</h3>
+          <p><a href="mailto:support@techgadget.com" class="contact-link">support@techgadget.com</a></p>
+        </div>
+        <div>
+          <h3>Facebook</h3>
+          <p><a href="Dare Tomi" class="contact-link">Chat with us on Facebook</a></p>
+        </div>
+        <div class="info-item">
+          <h3>🏢 Address</h3>
+          <p>Tech Gadget Hub<br>Lagos, Nigeria</p>
+        </div>
+        <div class="info-item">
+          <h3>⏰ Business Hours</h3>
+          <p>Mon - Fri: 9 AM - 6 PM<br>Sat: 10 AM - 6 PM<br>Sun: Closed</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>About Us</h4>
+      <p>TechGadget - Your trusted platform for buying and selling premium iPhones and Laptops</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home" onclick="showSection('home')">Home</a></li>
+        <li><a href="#products" onclick="showSection('products')">Shop</a></li>
+        <li><a href="#sell" onclick="showSection('sell')">Sell Device</a></li>
+        <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#" class="social-link">Facebook</a>
+        <a href="#" class="social-link">Instagram</a>
+        <a href="#" class="social-link">Twitter</a>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <p class="footer-bottom">&copy; 2026 TechGadget. All Rights Reserved | Buy & Sell iPhones & Laptops at Best Prices</p>
+</footer>
+
+<script src="E-commerce.js"></script>
+</body>
+</html>

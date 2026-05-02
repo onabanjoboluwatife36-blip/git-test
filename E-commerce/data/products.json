@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "name": "iPhone 15 Pro Max",
+        "category": "iphone",
+        "price": 799000,
+        "description": "Latest 6.7 inch display, A17 Pro chip, 256GB, Warranty included, Excellent condition",
+        "image": "iphone 15 pro max.jpg"
+    },
+    {
+        "id": 2,
+        "name": "iPhone 15 Pro",
+        "category": "iphone",
+        "price": 699000,
+        "description": "6.1 inch Titanium design, 48MP camera, 128GB, Never used, Original box included",
+        "image": "iphone 15 pro.webp"
+    },
+    {
+        "id": 3,
+        "name": "iPhone 15",
+        "category": "iphone",
+        "price": 599000,
+        "description": "Powerful A17 Pro chip, 120Hz display, 128GB, Like new condition, 1 year warranty",
+        "image": "iphone15.webp"
+    },
+    {
+        "id": 4,
+        "name": "iPhone 14 Pro Max",
+        "category": "iphone",
+        "price": 549000,
+        "description": "Dynamic Island display, Pro Max size, 256GB, Excellent condition, Full warranty",
+        "image": "iphone14.jpg"
+    },
+    {
+        "id": 5,
+        "name": "iPhone 14 Pro",
+        "category": "iphone",
+        "price": 599000,
+        "description": "5G enabled, Dual camera system, 256GB, Professional grade, Original accessories",
+        "image": "iphone14pro.webp"
+    },
+    {
+        "id": 6,
+        "name": "iPhone SE (3rd Gen)",
+        "category": "iphone",
+        "price": 329000,
+        "description": "Compact & powerful, great for budget, 128GB, Perfect for students, Warranty included",
+        "image": "iphonese.webp"
+    },
+    {
+        "id": 7,
+        "name": "MacBook Air M2",
+        "category": "laptop",
+        "price": 1199000,
+        "description": "Apple Silicon M2, 256GB SSD, 8GB RAM, Lightweight & portable, 2024 model, Perfect for work",
+        "image": "macbookairm2.webp"
+    },
+    {
+        "id": 8,
+        "name": "MacBook Air M1",
+        "category": "laptop",
+        "price": 899000,
+        "description": "Apple Silicon M1, 512GB SSD, 8GB RAM, Long battery life, Excellent performer, Like new",
+        "image": "macbookairm1.webp"
+    },
+    {
+        "id": 9,
+        "name": "MacBook Pro 14 inch",
+        "category": "laptop",
+        "price": 1899000,
+        "description": "Apple Silicon, 512GB SSD, 16GB RAM, Apple Pro Display, Professional workstation",
+        "image": "macbook14 .webp"
+    },
+    {
+        "id": 10,
+        "name": "Dell XPS 13",
+        "category": "laptop",
+        "price": 1299000,
+        "description": "Intel i7, RTX Graphics, 512GB SSD, 16GB RAM, Premium performer, Great for gaming",
+        "image": "dellxps13.webp"
+    },
+    {
+        "id": 11,
+        "name": "HP Pavilion Gaming",
+        "category": "laptop",
+        "price": 799000,
+        "description": "Intel i5, 8GB RAM, 256GB SSD, Perfect for students, Gaming capable, Great value",
+        "image": "HP Pavilion.jpg"
+    }
+]

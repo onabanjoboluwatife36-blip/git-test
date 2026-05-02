@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "iPhone 15 Pro",
+        "price": 999.99,
+        "image": "image/OIP 8.webp"
+    },
+    {
+        "id": 2,
+        "name": "iPhone 15",
+        "price": 799.99,
+        "image": "image/OIP 10.webp"
+    },
+    {
+        "id": 3,
+        "name": "iPhone 14 Pro",
+        "price": 899.99,
+        "image": "image/OIP 14.webp"
+    },
+    {
+        "id": 4,
+        "name": "iPhone 14",
+        "price": 699.99,
+        "image": "image/OIP 19.webp"
+    },
+    {
+        "id": 5,
+        "name": "iPhone SE",
+        "price": 429.99,
+        "image": "image/OIP 71.webp"
+    },
+    {
+        "id": 6,
+        "name": "MacBook Pro 16\"",
+        "price": 2499.99,
+        "image": "image/apple-macbook-pro-14-inch_k9q6.3840.webp"
+    },
+    {
+        "id": 7,
+        "name": "MacBook Pro 14\"",
+        "price": 1999.99,
+        "image": "image/macbook-air-m1-hero01-100866889-orig.webp"
+    },
+    {
+        "id": 8,
+        "name": "MacBook Air M2",
+        "price": 1199.99,
+        "image": "image/R (1).jpg"
+    },
+    {
+        "id": 9,
+        "name": "MacBook Air M1",
+        "price": 999.99,
+        "image": "image/R 12.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Dell XPS 13",
+        "price": 1299.99,
+        "image": "image/xps.webp"
+    }
+]
